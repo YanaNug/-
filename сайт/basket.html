@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script defer src="js/3.js"></script>
+    <script defer src="js/script.js"></script>
+    <script src="./js/basket.js" type="module" defer></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script> 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <title>Корзина</title>
+</head>
+<body>
+    <header class="header-block">
+        <div class="container">
+            <div class="header">
+                <div class="header__logo">
+                    <a href="index.html" class="logo__link">
+                        MARINUS CAKE
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul class="nav">
+                        <li class="nav__item active-link"><a href="index.html" class="nav__link ">Главная</a>
+                        </li>
+                        <li class="nav__item active-link"><a href="./index.html#aboutUs" class="nav__link">О нас</a></li>
+                        <li class="nav__item active-link"><a href="catalog.html" class="nav__link">Каталог</a></li>
+                        <li class="nav__item active-link"><a href="price.html" class="nav__link">Цены</a></li>
+                        <li class="nav__item basket active-link">
+                            <a href="basket.html" class="nav__link">
+                                <img src="img/shopping-basket_12596934.png" alt="basket" class="nav__link basket__img">
+                                <div class="cart__num basket__count" id="cart_num">0</div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="nav__burger">
+
+                    <label for="touch" class="">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" class="burger__img" ><path d="M7,11h-3C1.79,11,0,9.21,0,7v-3C0,1.79,1.79,0,4,0h3c2.21,0,4,1.79,4,4v3c0,2.21-1.79,4-4,4Zm13,13h-3c-2.21,0-4-1.79-4-4v-3c0-2.21,1.79-4,4-4h3c2.21,0,4,1.79,4,4v3c0,2.21-1.79,4-4,4Zm-13,0h-3c-2.21,0-4-1.79-4-4v-3c0-2.21,1.79-4,4-4h3c2.21,0,4,1.79,4,4v3c0,2.21-1.79,4-4,4ZM21.25,0c-1.34,0-2.51,1.05-2.76,2.44h0c-.25-1.39-1.4-2.44-2.74-2.44-1.52,0-2.75,1.35-2.75,3.02,0,2.38,3.1,5.21,4.65,6.45,.5,.4,1.21,.4,1.71,0,1.54-1.24,4.65-4.07,4.65-6.45,0-1.67-1.23-3.02-2.75-3.02Z"/></svg>
+                        </span>
+                    </label>               
+                    <input type="checkbox" id="touch"> 
+                  
+                    <ul class="burger-slide">
+                      <li><a href="index.html" class="burger-slide__link">Главная</a></li> 
+                      <li><a href="catalog.html" class="burger-slide__link">Каталог</a></li>
+                      <li><a href="price.html" class="burger-slide__link">Цены</a></li>
+                    </ul>
+                  </nav> 
+                  <div class="basket__none">
+                    <a href="basket.html" class="burger-slide__link">
+                        <img src="img/shopping-basket_12596934.png" alt="basket" class="nav__link basket__img">
+                        <div class="cart__num" id="cart_num">0</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+<section class="basket-box">
+    <div class="container">
+    <div class="basket-item">
+        <div class="vip-cakes">
+            <div class="cake-vip"></div>
+        </div>
+        <a id="add-cheescake" class=" add-link" href="#">Выбрать чизкейк</a>
+        <div id="product__block-cheescake" class="basket__product-item cart-item " >
+            <div class="cart__img">
+                <img src="./img/cheesecake1.jpg" alt="cheesecake">
+            </div>
+            <div class="product-item__name">
+            <div class="product-item__input ">
+                <select id="cakes">
+                    <option value="" >Пожалуйста выберите чизкейк</option>
+                   <option value="napoleon">Классический Нью-Йорк</option>
+                   <option value="madovik">Сан-себастьян</option>
+                   <option value="milk">Шоколадный</option>
+                   <option value="praga">Тирамису</option>
+                   <option value="trishokolada">Три шоколада</option>
+                   <option value="napoleon">Фисташковый</option>
+                   <option value="madovik">Кокосовый</option>
+                   <option value="milk">Кедровый</option>
+                   <option value="praga">Ягода (на Ваш выбор)</option>
+                   <option value="trishokolada">Манго-маракуйя</option>
+                   <option value="trishokolada">Лайм-мята</option>
+                </select>
+            </div> 
+            </div>
+
+            <div class="product-item__count">
+                <input class="input is-primary cart-item-qty" style="width:100px" type="number" min="1" value="0">
+            </div>
+            <div class="cart-item-total">1500</div>
+            <!-- <a class="button is-small">Удалить</a> -->
+        </div>
+        
+        <a id="add-cake" class="add-link">Выбрать торт</a>
+        <div class="basket__product-item cart-item" id="product__block-cake">
+            <div class="cart__img">
+                <img src="./img/delicious-cake-with-flower.jpg" alt="cake">
+            </div>
+            <div class="product-item__name">
+            <div class="product-item__input ">
+                <select id="cakes">
+                    <option value="">Пожалуйста выберите торт </option>
+                    <option value="napoleon">Наполеон</option>
+                    <option value="madovik">Медовик</option>
+                    <option value="milk">Молочная девочка</option>
+                    <option value="praga">Прага</option>
+                    <option value="trishokolada">Три шоколада</option>
+                    <option value="napoleon">Брауни</option>
+                    <option value="madovik">Блинный</option>
+                    <option value="milk">Графские развалины</option>
+                </select>
+            </div> 
+            </div>
+
+            <div class="product-item__count">
+                <input class="input is-primary cart-item-qty" style="width:100px" type="number" min="1" value="0">
+            </div>
+            <div class="cart-item-total">1300р/кг</div>
+            <a class="button is-small"></a>
+        </div>
+
+        <a id="add-dessert" class=" add-link" href="#">Выбрать десерт</a>
+        <div class="basket__product-item cart-item" id="product__block-dessert">
+            <div class="cart__img">
+                <img src="./img/desserts-basket.jpg" alt="cake">
+            </div>
+            <div class="product-item__name">
+               
+            <div class="product-item__input ">
+                <select id="cakes">
+                    <option value="">Пожалуйста выберите десерт</option>
+                   <option value="napoleon">Кукис</option>
+                   <option value="madovik">Трайфл</option>
+                   <option value="milk">Пончики</option>
+                   <option value="praga">Мини-чизкейк</option>
+                   <option value="trishokolada">Капкейк</option>
+                </select>
+            </div> 
+            </div>
+            <div class="product-item__count">
+                <input class="input is-primary cart-item-qty" style="width:100px" type="number" min="1" value="0">
+            </div>
+            <div class="cart-item-total">от 110р/шт</div>
+            <a class="button is-small"></a>
+        </div>
+        <a id="add-constructor" class="add-link" href="#">Конструктор</a>
+        <div class="basket__product-item cart-item" id="product__block-constructor">
+            <div class="product-item__input ">
+                <select id="cakes">
+                    <option value="">Выберите бисквит</option>
+                   <option value="napoleon">Кокосовый</option>
+                   <option value="madovik">Ванильный</option>
+                   <option value="milk">Шоколадный</option>
+                   <option value="praga">Морковный</option>
+                </select>
+            </div> 
+            <div class="product-item__input ">
+                <select id="cakes">
+                    <option value="">Выберите крем</option>
+                   <option value="napoleon">Кремчиз</option>
+                   <option value="madovik">Крем-пломбир</option>
+                   <option value="milk">Йогуртовый</option>
+                   <option value="praga">Шоколадный</option>
+                   <option value="praga">Сливочный заварной крем</option>
+                </select>
+            </div> 
+            <div class="product-item__input ">
+                <select id="cakes">
+                    <option value="">Выберите начинку</option>
+                   <option value="napoleon">Банан-слики</option>
+                   <option value="madovik">Орех "грильяж"</option>
+                   <option value="milk">Ягодное кофи</option>
+                   <option value="praga">Шоколадная кроша</option>
+                   <option value="praga">Карамелизированный банан</option>
+                   <option value="praga">Ганаш белый/молочный шокоад</option>
+                </select>
+            </div>           
+        </div>
+</div>
+</section>
+
+<section class="total">
+    <div class="container">
+        <form action="" method="post" enctype="multipart/form-data">
+            <textarea name="" id="" cols="150" rows="10" placeholder="Здесь Вы можете описать оформление или какие-либо пожелания, а также прикрепить фото с примером оформления"></textarea>
+            <input type="file" accept="image/*" >
+        </form>
+        <div class="phone">
+            <input class="form-input" type="tel" name="code" placeholder="Телефон">
+          </div>
+          <div class="email">
+            <input class="form-input" type="email" name="code" placeholder="Email">
+          </div>
+        <button class="btn-send" onclick="alert('Спасибо за заказ! Мы свяжемся с Вами для согласования заказа')">Оформить заказ</button> <span class="mini-text">*Мы свяжемся с Вами!</span>
+    </div>
+</section>
+        
+   
+
+
+<footer class="footer-box">
+    <div class="container">
+        <div class="footer">
+            <div class="footer__left">
+                <div class="footer__logo">
+                    <img class="logo__img" src="/img/logo.png" alt="logo">
+                </div>
+                <p class="footer__text">Торты, капкейки <br> И другие кондитерские изделия</p>
+                <p class="footer__local"> г. Минеральные Воды</p>
+            </div>
+            <div class="footer__rigth">
+                <div class="media__title">Остались вопросы? <br>Мы всегда на связи</div>
+                <div class="footer__link">
+                <a href="https://wa.me/79034451797" class="media__link"> <img src="/img/whatsapp.png" alt="wots"></a>
+                <a href="https://t.me/+79034451797" class="media__link"> <img src="/img/telegram.png" alt="telega"></a>  
+            </div>
+            <div class="footer__phone">
+                <a class="footer__btn" href="tel:+7(903)4451797" >  +7 (903) 445 17 97</a>
+            </div>
+            <!-- <a class="footer__btn" >
+                Заказать звонок
+            </a> -->
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="prava">© 2024 Marinus Cake</div>
+        </div>
+</footer>
+
+</body>
+</html>

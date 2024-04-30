@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script defer src="/js/script.js"></script>
+    <script defer src="/js/2.js"></script>
+    <script src="./js/cake.js" type="module" defer></script>
+    <script src="./js/dessert.js" type="module" defer></script>
+    <title>Каталог</title>
+</head>
+<body>
+    <header class="header-block">
+        <div class="container">
+            <div class="header">
+                <div class="header__logo">
+                    <a href="index.html" class="logo__link">
+                        MARINUS CAKE
+                    </a>
+                </div>
+                <nav class="header__nav ">
+                    <ul class="nav">
+                        <li class="nav__item "><a href="index.html" class="nav__link">Главная</a>
+                        </li>
+                        <li class="nav__item dropbtn">
+                            <a href="index.html#aboutUs" class="nav__link">О нас</a>
+                        </li>
+                        <li class="nav__item "><a href="catalog.html" class="nav__link active-link">Каталог</a>
+                        </li>
+                        <li class="nav__item"><a href="price.html" class="nav__link">Цены</a></li>
+                        <li class="nav__item basket">
+                            <a href="basket.html" class="nav__link">
+                                <img src="img/shopping-basket_12596934.png" alt="basket" class="nav__link basket__img">
+                                <div class="cart__num basket__count" id="cart_num">0</div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="nav__burger">
+
+                    <label for="touch" class="">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" class="burger__img" ><path d="M7,11h-3C1.79,11,0,9.21,0,7v-3C0,1.79,1.79,0,4,0h3c2.21,0,4,1.79,4,4v3c0,2.21-1.79,4-4,4Zm13,13h-3c-2.21,0-4-1.79-4-4v-3c0-2.21,1.79-4,4-4h3c2.21,0,4,1.79,4,4v3c0,2.21-1.79,4-4,4Zm-13,0h-3c-2.21,0-4-1.79-4-4v-3c0-2.21,1.79-4,4-4h3c2.21,0,4,1.79,4,4v3c0,2.21-1.79,4-4,4ZM21.25,0c-1.34,0-2.51,1.05-2.76,2.44h0c-.25-1.39-1.4-2.44-2.74-2.44-1.52,0-2.75,1.35-2.75,3.02,0,2.38,3.1,5.21,4.65,6.45,.5,.4,1.21,.4,1.71,0,1.54-1.24,4.65-4.07,4.65-6.45,0-1.67-1.23-3.02-2.75-3.02Z"/></svg>
+                        </span>
+                    </label>               
+                    <input type="checkbox" id="touch"> 
+                  
+                    <ul class="burger-slide">
+                      <li><a href="index.html" class="burger-slide__link">Главная</a></li> 
+                      <li><a href="catalog.html" class="burger-slide__link">Каталог</a></li>
+                      <li><a href="price.html" class="burger-slide__link">Цены</a></li>
+                    </ul>
+
+                  </nav> 
+                  <div class="basket__none">
+                    <a href="basket.html" class="burger-slide__link">
+                        <img src="img/shopping-basket_12596934.png" alt="basket" class="nav__link basket__img">
+                        <div class="cart__num" id="cart_num">0</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-box">
+        <div class="container">
+            <div class="main__top">
+            <h2 class="information__title_waffle"> Повод не важен,<br> украсим любой Ваш день</h2>
+            </div>
+
+            <h3 class="part">
+                Фирменные
+            </h3>
+
+            <div class="cards products-block"></div>
+            <button class="show-cards none">Показать еще</button>
+
+            <h3 class="part">
+                Чизкейки
+            </h3>
+
+            <div class="product__block product__block_lite">
+                <div class="product__left">
+                    <img src="/img/cheesecake1.jpg" alt="001" class="product__img">
+                </div>
+
+                <div class="product__rigth product__rigth_lite">
+                    <div class="product__title product__title_lite">Чизкейк</div>
+                    <div class="product__desc product__desc_lite"> 
+                        <ul class="cheesecake__list">
+                            <li class="cheesecake__info">
+                                классический Нью-Йорк, Сан-себастьян
+                            </li>
+                            <li class="cheesecake__info">
+                                шоколадный
+                            </li>
+                            <li class="cheesecake__info">
+                                тирамису
+                            </li>
+                            <li class="cheesecake__info">
+                                фисташковый, кокосовый, кедровый
+                            </li>
+                            <li class="cheesecake__info">
+                                ягода (на Ваш выбор)
+                            </li>
+                        </ul>
+                    </div>
+                    <button><a class="product__add product__add_lite add-to-cart add-cheescake" href="basket.html#add-chesecake" target="_blank">Хочу!</a></button>
+                </div>
+            </div>
+
+            <h3 class="part">
+                Традиционные
+            </h3>
+            <div class=" product__block product__block_lite">
+                <div class="product__left">
+
+                    <div class="slider-container">
+                        <div class="top">
+                            <button class="arrow arrow-left" type="button">
+                                <img src="/img/icon-left.png" alt="icon-left">
+                            </button>
+                            <div class="slider">
+                                <img src="/img/торт1.jpg" alt="001" class="slider-image fade block">
+                                <img src="/img/торт2.jpg" alt="002" class="slider-image fade">
+                                <img src="img/торт3.jpg" alt="003" class="slider-image fade">
+                                <img src="/img/delicious-cake-with-flower.jpg" alt="004" class="slider-image fade">
+                                <img src="img/кр.бархат.jpg" alt="005" class="slider-image fade">
+                                <img src="/img/медовик.jpg" alt="006" class="slider-image fade block">
+                                <img src="/img/прага.jpg" alt="006" class="slider-image fade block">
+                            </div>
+                            
+                            <button class="arrow arrow-right" type="button">
+                                <img src="/img/icon-right.png" alt="icon-right">
+                            </button>
+                        </div>
+                        <div id="bottom">
+                            <div class="pagination-circle active"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__rigth product__rigth_lite">
+                    <div class="product__title">Торт</div>
+                    <div class="product__desc product__desc_lite"> Торт в ассортементе: прага, наполеон, фисташковый, медовик, три шоколада, графские развалины, брауни,  блинный... и т.д. Выберите Ваш любимый торт и он будет исполнен по традиционному рецепту</div>
+                    <button class="product__add product__add_lite mybtn add-to-cart" ><a href="basket.html#add-dessert" target="-blank">Хочу!</a></button>
+                </div>
+            </div>
+
+
+            <h3 class="part">
+                Десерты
+            </h3>
+        <div class="">
+            <div class="cards-dessert dessert"></div>
+        </div>
+
+    </div>
+    </main>
+
+        <section class="constructor">
+            <div class="container">
+            <h2 class="constructor__header">
+                Конструктор
+            </h2>
+            <div class="info">
+                У Вас есть возможность создать идеальный торт по своим предпочтениям! Выберите именно ту составляющую торта, которая вам кажется наиболее привлекательной. Количество начинки Вы можете выбрать столько, сколько считаете необходимым. Сочетайте несочетаемое!
+            </div>
+            <h2 class="part part_lite">
+                Бисквит
+            </h2>
+            <ul class="flex-constructor">
+                <li class="constructor__item" >Ванильный</li>
+                <li class="constructor__item "> Шоколадный</li>
+                 <li class="constructor__item "> Кокосовый</li>
+                <li class="constructor__item ">Морковный</li>
+            </ul>
+            <h2 class="part part_lite">
+                Крем
+            </h2>
+            <ul class="flex-constructor">
+                <li class="constructor__item ">Кремчиз</li>
+                <li class="constructor__item ">Крем-пломбир</li>
+                <li class="constructor__item ">Йогуртовый</li>
+                <li class="constructor__item ">Шоколадный</li>
+                <li class="constructor__item ">Сливочный заварной крем </li>
+            </ul>
+            <h2 class="part part_lite">
+                Начинка
+            </h2>
+            <ul class="flex-constructor">
+                <li class="constructor__item"> Банан-слики</li>
+                <li class="constructor__item">Орех "грильяж" </li>
+                <li class="constructor__item"> Ягодное кофи</li>
+                <li class="constructor__item">Шоколадная кроша </li>
+                <li class="constructor__item">Карамелизированный банан </li>
+                <li class="constructor__item">Ганаш белый/молочный шокоад</li>
+            </ul>
+            <!-- <textarea name="" id="" class="constructor__input" placeholder="Тут оторбазится ваш выбор" of_input></textarea> -->
+            <button class="product__add"><a href="basket.html#add-constructor" class="link-constructor">Хочу!</a></button>
+        </div>
+    </section> 
+
+    <footer class="footer-box">
+        <div class="container">
+            <div class="footer">
+                <div class="footer__left">
+                    <div class="footer__logo">
+                        <img class="logo__img" src="/img/logo.png" alt="logo">
+                    </div>
+                    <p class="footer__text">Торты, капкейки <br> И другие кондитерские изделия</p>
+                    <p class="footer__local"> г. Минеральные Воды</p>
+                </div>
+                <div class="footer__rigth">
+                    <div class="media__title">Остались вопросы? <br>Мы всегда на связи</div>
+                    <div class="footer__link">
+                    <a href="https://wa.me/79034451797" class="media__link"> <img src="/img/whatsapp.png" alt="wots"></a>
+                    <a href="https://t.me/+79034451797" class="media__link"> <img src="/img/telegram.png" alt="telega"></a>  
+                </div>
+                <div class="footer__phone">+7 (903) 445 17 97</div>
+                <a class="footer__btn" href="#">Заказать звонок</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="prava">© 2024 Marinus Cake</div>
+            </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,230 @@
+@import 'vars';
+
+textarea {
+  width: 100%;
+  height: 175px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  margin-top: 75px;
+}
+select {
+  width: 75%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+.cart__num {
+    position: absolute;
+    background-color: $linkColor;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: $contentCenter;
+    align-items: $contentCenter;
+    color: #6b0050;
+    font-size: 18px;
+    font-weight: 500;
+    top: 1px;
+    right: 10px;
+  }
+
+.basket-item{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.basket__product-item{
+  text-align: right;
+}
+
+.vip-cakes {
+  min-height: 15vh;
+}
+.cart__product{
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr 2fr 2fr;
+  text-align: $contentCenter;
+  line-height: 100px;
+}
+.cart__img{
+  width: 50%;
+}
+
+.btn-send {
+  border: none;
+  font-size: 20px;
+  padding: 12px 20px;
+  background-color: rgba(250, 138, 26, 0.637);
+  border-radius: $radius;
+  color: $linkBgColorTwo;
+  max-width: 350px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  transition: 2s;
+}
+.btn-send:hover{
+  font-size: 22px;
+  background-color: rgba(250, 138, 26, 0.637);
+  color: $linkBgColorTwo;
+  transform: scale(1);
+}
+
+.total {
+  max-width: 1200px;
+  background-color: $linkBgColor;
+  min-height: 350px;
+}
+
+#product__block-cheescake{
+  display: none;
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr 2fr 2fr;
+  align-items:$contentCenter;
+}
+#product__block-cake{
+  display: none;
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr 2fr 2fr;
+  align-items:$contentCenter;
+}
+#product__block-dessert{
+  display: none;
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr 2fr 2fr;
+  align-items:$contentCenter;
+}
+#product__block-constructor{
+  display: none;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  align-items:$contentCenter;
+}
+.add-link{
+  max-width: 250px;
+  color: $linkColor;
+  background-color: #6b0050c9;
+  padding: 11px;
+  border-radius: $radius;
+  text-align: $contentCenter;
+  font-size: 16px;
+}
+.add-link:hover{
+  font-size: 18px;
+  background-color: #6b0050;
+}
+.mini-text {
+  font-size: 14px;
+}
+
+
+
+@keyframes pencil-twist{
+  0%{
+    transform: rotate(0deg);
+  }
+  20%{
+    transform: rotate(30deg);
+  }
+  80%{
+    left: 10rem;
+  }
+  100%{
+    transform: rotate(-30deg);
+    left: 10rem;
+  }
+  }
+
+.phone, .email  {
+  position: relative;
+  margin-top: 25px;
+
+  &:after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0.35rem;
+    left: 11rem;
+    border-radius: 5px;
+    background-color: $colorMain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  &:focus-within{
+    &:after{
+      animation-name: pencil-twist;
+    }
+  }
+}
+  .form-input{
+    width: 11rem;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 0.07px solid rgba($colorMain, 0.3);
+    border-radius: 0;
+    color: $colorMain;
+    text-align: left;
+
+    &:focus{
+      border-bottom: 0.07px solid $colorMain;
+      outline: unset;
+    }
+  }
+
+
+  @media(max-width:944px) {
+    .cart__num {
+      display: none;
+    }
+  }
+
+  @media(max-width:900px){
+    .cart__title{
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    .cart__img {
+      display: none;
+    }
+    .cart__product{
+      grid-template-columns: repeat(4, 3fr);
+    }
+  }   
+  
+  @media(max-width:768px){
+    .cart-item-qty{
+      max-width: 150px;
+    }
+    .basket-item{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+ 
+      margin-top: 75px;
+      margin-bottom: 75px;
+    }
+    .basket__product-item{
+      font-size: 16px;
+      gap: 25px;
+    }
+    .product-item__input{
+      min-width: 200px;
+    }
+    .cart-item-total{
+      min-width: 150px;
+    }
+  }   
+  

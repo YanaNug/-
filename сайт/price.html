@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script defer src="js/script.js"></script>
+    <title>Цены</title>
+</head>
+<body>
+        <header class="header-block">
+            <div class="container">
+                <div class="header">
+                    <div class="header__logo">
+                        <a href="index.html" class="logo__link">
+                            MARINUS CAKE
+                        </a>
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="nav">
+                            <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                            <li class="nav__item dropbtn">
+                                <a href="./index.html#aboutUs" class="nav__link">О нас</a>
+                            </li>
+                            <li class="nav__item"><a href="catalog.html" class="nav__link">Каталог</a></li>
+                            <!-- <li class="nav__item"><a href="http://127.0.0.1:5500/index.html#aboutPhoto" class="nav__link">Фотогалерея</a></li>  -->
+                            <li class="nav__item"><a href="price.html" class="nav__link active-link">Цены</a></li>
+                            <li class="nav__item basket">
+                                <a href="basket.html" class="nav__link">
+                                    <img src="img/shopping-basket_12596934.png" alt="basket" class="nav__link basket__img">
+                                    <div class="cart__num basket__count" id="cart_num">0</div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <nav class="nav__burger">
+
+                        <label for="touch" class="">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" class="burger__img" ><path d="M7,11h-3C1.79,11,0,9.21,0,7v-3C0,1.79,1.79,0,4,0h3c2.21,0,4,1.79,4,4v3c0,2.21-1.79,4-4,4Zm13,13h-3c-2.21,0-4-1.79-4-4v-3c0-2.21,1.79-4,4-4h3c2.21,0,4,1.79,4,4v3c0,2.21-1.79,4-4,4Zm-13,0h-3c-2.21,0-4-1.79-4-4v-3c0-2.21,1.79-4,4-4h3c2.21,0,4,1.79,4,4v3c0,2.21-1.79,4-4,4ZM21.25,0c-1.34,0-2.51,1.05-2.76,2.44h0c-.25-1.39-1.4-2.44-2.74-2.44-1.52,0-2.75,1.35-2.75,3.02,0,2.38,3.1,5.21,4.65,6.45,.5,.4,1.21,.4,1.71,0,1.54-1.24,4.65-4.07,4.65-6.45,0-1.67-1.23-3.02-2.75-3.02Z"/></svg>
+                            <!-- <img src="/img/followcollection_9291645.svg" class="burger__img" alt="">                         -->
+                            </span>
+                        </label>               
+                        <input type="checkbox" id="touch"> 
+                      
+                        <ul class="burger-slide">
+                          <li><a href="index.html" class="burger-slide__link">Главная</a></li> 
+                          <li><a href="catalog.html" class="burger-slide__link">Каталог</a></li>
+                          <li><a href="price.html" class="burger-slide__link">Цены</a></li>
+                          
+                        </ul>
+
+                      </nav> 
+                      <div class="basket__none">
+                        <a href="basket.html" class="burger-slide__link">
+                            <img src="img/shopping-basket_12596934.png" alt="basket" class="nav__link basket__img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        
+        <section class="price-block">
+            <div class="container">
+                
+            
+                    <!-- <section class="price-info">
+                        <p class="price-info__text">
+                            На данной странице представлены только цены на наш ассортимент. <br> С наполнением того или иного торта можно ознакомиться в карточке товара на странице каталога.
+                        </p>
+                        <p class="price-info__text">
+                            Если не нашли интересующую вас информацию, всегда рады ответить вам в месседжерах или по телефону.
+                        </p>
+                    </section> -->
+
+                    
+            <h3 class="part">
+                Конструкции
+            </h3>
+            <div class="constructions">
+                <div class="construction__block">
+                    <div class="construction__title">
+                        Бенто
+                    </div>
+                    <div >
+                        <img class="construction__img" src="/img/111.png" alt="bento">
+                    </div>
+            
+                    <div class="construction__subtitle">
+                        от 950р
+                    </div>
+                </div>
+                <div class="construction__block">
+                    <div class="construction__title">
+                        Одноярусные
+                    </div>
+                    <div>
+                        <img class="construction__img" src="/img/чизкейк.png" alt="bento">
+                    </div>
+                    <div class="construction__subtitle">
+                        от 1300 р/кг
+                    </div>
+                </div>
+                <div class="construction__block">
+                    <div class="construction__title">
+                        Многоярусные
+                    </div>
+                    <div>
+                        <img class="construction__img" src="/img/2ухяр.png" alt="bento">
+                    </div>
+                    <div class="construction__subtitle">
+                        от 1400 р/кг
+                    </div>
+                </div>
+                <div class="construction__block">
+                    <div class="construction__title">
+                        Десерты
+                    </div>
+                    <div>
+                        <img class="construction__img" src="/img/десерт.png" alt="bento">
+                    </div>
+                    <div class="construction__subtitle">
+                        от 600р
+                    </div>
+                </div>
+            
+            </div>
+   
+
+
+
+        <h3 class="part">Бенто-торт</h3>
+        <div class="price__bento">
+            <div class="price__item bento-biscuit b"> <span class="text__selection">Бисквит:</span> <br> ванильный, шоколадный, кокосовый</div>
+            <div class="price__item bento-cream c1"> Крем-чиз </div>
+            <div class="price__item bento__price p1"> 950р</div>
+        
+            <div class="price__item bento-cream c2">Крем пломбир, ганаш на молочном/белом шоколаде </div>
+            <div class="price__item bento__price p2"> 1100р</div>
+
+            <div class="price__item bento-cream c3">Любой крем + ягодное/фруктовое конфи или сливочно банановая начинка </div>
+            <div class="price__item bento__price p3"> 1200р</div>
+
+
+            <div class="price__item b-m">Бенто-макси <span class="bento-maxi">(900-1000г)</span> любой</div>
+            <div class="price__item bento__price p4"> 1500р</div>
+
+        </div>
+        <h3 class="part">Торты</h3>
+        <div class="price__cake">
+            <div class="price__item"> Vip-торты</div>
+            <div class="price__item"> От 1800 р/кг</div>
+            <div class="price__item"> Традиционные торты</div>
+            <div class="price__item"> От 1300 р/кг</div>
+        </div>
+        <h3 class="part">Чизкейки</h3>
+        <div class="price__cake">
+            <div class="price__item">На основе одной добавки (кокос/ шоколад/ ваниль... )</div>
+            <div class="price__item">От 1500 р/кг</div>
+            <div class="price__item"> На основе двух и более (фисташка-малина, шоколадная вишня, лимон и мята... )</div>
+            <div class="price__item"> От 1700 р/кг</div>
+        </div>
+        
+        <h3 class="part">Десерты</h3>
+        <div class="price__cake">
+            <div class="price__item"> Пончики / кукис</div>
+            <div class="price__item"> 110р/шт</div>
+            <div class="price__item"> Капкейки</div>
+            <div class="price__item"> 120р/шт</div>  <div class="price__item"> Мини-чизкейк / трайфл</div>
+            <div class="price__item"> 150р/шт</div>
+        </div>
+
+        <h3 class="part">Конструктор</h3>
+
+        <div class="price__cake">
+            <div class="price__item"> <span class="text__selection"> Бисквит:</span> ванильный, шоколадный, морковный</div>
+            <div class="price__item"> <span class="text__selection"> Крем:</span> кремчиз, крем-пломбир</div>
+            <div class="price__item"> <span class="text__selection"> Начинка:</span> банан-сливки, карамелезированный банан, ягодное конфи(вишня, малина, клубника), ганаш белый / молочный шоколад</div>
+            <div class="price__item grid-1x3"> 1500 р/кг</div>
+        </div>
+
+
+    </div>
+</section>
+
+<section class="price-info">
+    <div class="container">
+    <h2 class="price__title">Важно</h2>
+            <ul class="block__list">
+                <li class="block__item">
+                    Минимальный заказ чизкейка, фирменного/ традиционного торта - 2кг.
+                </li>
+                <li class="block__item">
+                    Минимальный заказ десерта - в количестве 6шт. Трайфл - 4шт.
+                </li>
+                <li class="block__item">
+                    Все элементы декора тортов оплачиваются отдельно. Стоимость оговаривается во время звонка - подтверждения заказа, после того как вы добавите в заказе пример фотографией или описание нужного вам декора.
+                </li>
+                <li class="block__item">
+                    Элементы декора десертов (посыпка на пончиках/трайфлах, ягоды на мини-чизкейках/ капкейках, шоколад на печенье, щоколадное драже, крендельки, джем, ореховые лепестки) уже включины в стоимость. При выборе нестандартого декора - цена оговаривается.
+                </li>
+                <li class="block__item">
+                    Доставка по городу бесплатная. По округу от 350р в зависимости от удаленности.
+                </li>
+            </ul>
+    </div>
+</section>
+
+<footer class="footer-box">
+    <div class="container">
+        <div class="footer">
+            <div class="footer__left">
+                <div class="footer__logo">
+                    <img class="logo__img" src="/img/logo.png" alt="logo">
+                </div>
+                <p class="footer__text">Торты, капкейки <br> И другие кондитерские изделия</p>
+                <p class="footer__local"> г. Минеральные Воды</p>
+            </div>
+
+            
+            <div class="footer__rigth">
+                <div class="media__title">Остались вопросы? <br>Мы всегда на связи</div>
+                <div class="footer__link">
+                <a href="https://wa.me/79034451797" class="media__link"> <img src="/img/whatsapp.png" alt="wots"></a>
+                <a href="https://t.me/+79034451797" class="media__link"> <img src="/img/telegram.png" alt="telega"></a>  
+            </div>
+            <div class="footer__phone">+7 (903) 445 17 97</div>
+            <a class="footer__btn" href="#">Заказать звонок</a>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="prava">© 2024 Marinus Cake</div>
+        </div>
+
+    
+</footer>
+    
+</body>
+</html>

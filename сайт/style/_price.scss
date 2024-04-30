@@ -1,0 +1,128 @@
+@import 'vars';
+
+.text__selection{
+    font-size: 20px;
+    font-weight: 600;
+    color:$colorMain;
+}
+
+.constructions {
+    display: flex;
+    justify-content: space-between;
+    align-items: $contentCenter;
+    flex-wrap: wrap;
+ }
+ .construction__block {
+    flex: 0 1 25%;
+    text-align: $contentCenter;
+    margin-bottom: 40px;
+ }
+ .construction__title {
+     font-family: $linkFont;
+     text-align: $contentCenter;
+     margin-bottom: 5px;
+     color:rgb(48, 3, 42);
+     margin-bottom: 7px;
+ }
+ .construction__subtitle{
+     text-align: $contentCenter;
+     font-weight: 700;
+ }
+ .construction__img{
+     width: 75%;
+     border-radius: 15px;
+     margin-bottom: 16px;
+ }
+
+
+.price-block {
+    padding: 35px 0 150px;
+}
+.price__bento{
+    display: grid;
+    grid-template-areas: "b c1 p1"
+    "b c2 p2"
+    "b c3 p3"
+    "bm bm p4";
+    gap: 15px;
+}
+.price__item {
+    background-color: #ef509f2f;
+    border-radius: $radius;
+    padding: 20px;
+}
+
+.b { grid-area: b; }
+.c1 { grid-area: c1; }
+.c2 { grid-area: c2; }
+.c3 { grid-area: c3; }
+.p1 { grid-area: p1; }
+.p2 { grid-area: p2; }
+.p3 { grid-area: p3; }
+.b-m {grid-area: bm;}
+.p4 {grid-area: p4;}
+
+.bento-maxi {
+    font-weight: 600;
+    font-size: 14px;
+}
+.price__cake {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 15px;
+}
+
+.grid-1x3{
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    text-align: $contentCenter;
+    padding: 100px 0;
+    
+}
+.price-info {
+    background-color: $linkBgColor;
+    padding: 120px 5px;
+}
+.price__title{
+    margin-bottom: 50px;
+    text-align: $contentCenter;
+    font-weight: 500;
+}
+
+.block__list{
+    text-align: justify;
+    padding: 5px;
+}
+.block__item{
+    background: url("/img/doughnut_1993902.png") no-repeat left center;
+    line-height: 30px;
+    padding-left: 50px; 
+    margin-bottom: 20px;
+  }
+
+@media(max-width:768px) {
+    .construction__block {
+        flex: 0 1 50%;
+        text-align: $contentCenter;
+     }
+     .construction__img{
+        width: 50%;
+        margin-bottom: 0;
+    }
+    .construction__subtitle{
+        font-weight: 700;
+        font-size: 14px;
+    }
+    .block__list {
+        padding: 0 35px;
+    }
+}
+@media(max-width:425px) {
+    .price-block, .price-info{
+        font-size: 15px;
+    }
+    .construction__block {
+        flex: 100%;
+     }
+}

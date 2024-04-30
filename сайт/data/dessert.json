@@ -1,0 +1,39 @@
+[
+    {
+        "id": 10,
+        "titleDessert": "Капкейки",
+        "priceDessert": "1800",
+        "imgDessert": "Капкейки.jpg",
+        "descrDessert": " ...'"
+    },
+    {
+        "id": 11,
+        "titleDessert": "Пончики",
+        "priceDessert": "1800",
+        "imgDessert": "пончики.jpg",
+        "descrDessert": "..."
+    },
+    {
+        "id": 12,
+        "titleDessert": "Мини-чизкейки",
+        "priceDessert": "1800",
+        "imgDessert": "мини-чизкейки.jpg",
+        "descrDessert": "..."
+    }
+    ,
+    {
+        "id": 13,
+        "titleDessert": "Кукис",
+        "priceDessert": "1800",
+        "imgDessert": "печенье.jpg",
+        "descrDessert": "..."
+    },
+    {
+        "id": 14,
+        "titleDessert": "Трайфл",
+        "priceDessert": "1800",
+        "imgDessert": "трайфлы.jpg",
+        "descrDessert": "..."
+    }
+]
+
