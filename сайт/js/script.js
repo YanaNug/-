@@ -10,6 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
   
+  icon
 
 //   $(document).on("click", ".goods a", function(e) {
 //     e.preventDefault();

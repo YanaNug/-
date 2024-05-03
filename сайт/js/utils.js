@@ -10,7 +10,7 @@ export function showErrorMessage(message) {
             <p><a href="/">Перейти к списку товаров!</a></p>
         </div>`;
     h1.insertAdjacentHTML('afterend', msg);
-}
+} 
 
 // Получение id из LS
 export function getBasketLocalStorage() {
@@ -38,4 +38,4 @@ export function checkingRelevanceValueBasket(productsData) {
     });
 
     setBasketLocalStorage(basket);
-}
+} 

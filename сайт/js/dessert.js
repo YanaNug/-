@@ -4,7 +4,7 @@ import {
     getBasketLocalStorage,
     checkingRelevanceValueBasket
 } from './utils.js';
-
+icon
 import { 
     COUNT_SHOW_CARDS_CLICK, 
     ERROR_SERVER,
